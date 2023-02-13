@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лаба 1</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <label for="starttime">Дата початку відліку:</label>
+      <input
+        type="date"
+        id="starttime"
+        name="starttime"
+        required
+        pattern="\d{4}-\d{2}-\d{2}"
+      />
+
+      <label for="endtime">Дата кінця відліку:</label>
+      <input
+        type="date"
+        id="endtime"
+        name="endtime"
+        required
+        pattern="\d{4}-\d{2}-\d{2}"
+      />
+
+      <button id="button">Порахувати</button>
+      <p>Кількість:</p>
+      <p id="result"></p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
